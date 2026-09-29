@@ -1,0 +1,29 @@
+{
+  "name": "zero-downtime-postgres-migration",
+  "version": "1.0.0",
+  "description": "Production-ready zero-downtime PostgreSQL schema migration engine using dual-write and shadow read patterns.",
+  "main": "dist/dual-write-middleware.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/dual-write-middleware.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "postgresql",
+    "migration",
+    "zero-downtime",
+    "dual-write",
+    "shadow-reads",
+    "database"
+  ],
+  "author": "ctousman",
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^8.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.11.0",
+    "typescript": "^5.5.0"
+  }
+}
